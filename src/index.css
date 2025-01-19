@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(/background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+div.language-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent */
+  color: white;
+  border-radius: 15px; /* Rounded corners */
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(8px); /* Blur the content behind the box */
+  width: 800px;  /* Fixed width for the install box */
+  height: 600px; /* 4:3 aspect ratio (height = width * 0.75) */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(64, 64, 64, 0.535);
+  position: relative; /* Needed for absolute positioning inside */
+}
+
+div.language-box img {
+  width: 70%;  /* Set the image width to 70% of the install box */
+  height: auto;
+  margin-bottom: 20px; /* Add some space below the image */
+  align-self: center;
+}
+
+div.dropdown-wrapper {
+  display: flex;
+  align-items: center;  /* Align items on the same line */
+  margin-bottom: 15px;  /* Space between each dropdown */
+  justify-content: space-between;
+  width: 100%;
+}
+
+select {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: white;  /* Set the dropdown text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;  /* Rounded corners for dropdown */
+  width: 48%;  /* Ensure dropdowns are the same width */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input {
+  width: 100%; /* Default width for flexibility */
+  padding: 10px 15px; /* Adds padding inside the input field */
+  font-size: 14px; /* Adjusts font size */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  color: #fff; /* White text for contrast */
+  border-radius: 8px; /* Rounded corners */
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  border: 1px solid rgba(255, 255, 255, 0);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255); /* Change the color of the placeholder */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Button Styling */
+button {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);  /* Black button */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;  /* White text */
+  border: none;  /* No border */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;  /* Rounded corners for button */
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+div.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;;
+}
+
+.language-box h1,
+.preferences,
+.copyright,
+label {
+  color: white;  /* Set all text to white */
+}
+
+div.productkey-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent */
+  color: white;
+  border-radius: 15px; /* Rounded corners */
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(8px); /* Blur the content behind the box */
+  width: 800px;  /* Fixed width for the install box */
+  height: 600px; /* 4:3 aspect ratio (height = width * 0.75) */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(132, 0, 255, 0.307);
+  position: relative; /* Needed for absolute positioning inside */
+}
+
+div.product-key-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
